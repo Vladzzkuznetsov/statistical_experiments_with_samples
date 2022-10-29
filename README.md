@@ -1,3 +1,4 @@
+</html>
 # statistical_experiments_with_samples
 Проведение статистических экспериментов при работе с выборками.
 # Основная идея
@@ -6,6 +7,7 @@
 <body>
   <p><img src="https://user-images.githubusercontent.com/111303182/198828826-7fc965bc-40bd-4806-893c-ec4e0f7e2ed1.png"></p>
 </body>
+
 ```python
   df = pd.DataFrame()
   mu_A, mu_B = 15, 18.5
@@ -22,3 +24,4 @@
   plt.legend(loc='upper right')
   plt.show()
 ```
+</html>
