@@ -7,18 +7,18 @@
   <p><img src="https://user-images.githubusercontent.com/111303182/198828826-7fc965bc-40bd-4806-893c-ec4e0f7e2ed1.png"></p>
 </body>
 ```python
-df = pd.DataFrame()
-mu_A, mu_B = 15, 18.5
-sigma_A, sigma_B = 0.1732* mu_A , 0.135* mu_B
-np.random.seed(42)
-data_A = np.random.normal(1.66,1,10_000)*sigma_A + mu_A
-data_B = np.random.normal(1.66,1,10_000)*sigma_B + mu_B
+  df = pd.DataFrame()
+  mu_A, mu_B = 15, 18.5
+  sigma_A, sigma_B = 0.1732* mu_A , 0.135* mu_B
+  np.random.seed(42)
+  data_A = np.random.normal(1.66,1,10_000)*sigma_A + mu_A
+  data_B = np.random.normal(1.66,1,10_000)*sigma_B + mu_B
 
-df['data_A'] = data_A
-df['data_B'] = data_B
+  df['data_A'] = data_A
+  df['data_B'] = data_B
 
-plt.hist(df['data_A'], bins=50, alpha=0.5, label='data_A')
-plt.hist(df['data_B'], bins=50, alpha=0.5, label='data_B')
-plt.legend(loc='upper right')
-plt.show()
+  plt.hist(df['data_A'], bins=50, alpha=0.5, label='data_A')
+  plt.hist(df['data_B'], bins=50, alpha=0.5, label='data_B')
+  plt.legend(loc='upper right')
+  plt.show()
 ```
